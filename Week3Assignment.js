@@ -23,6 +23,8 @@ for(i = 0; i < ages.length; i++){
  
 console.log(val2 - val1);
 
+
+
 let sum = 0;
 
 for(averageAge of ages){
@@ -79,3 +81,89 @@ nameSum = 0;
 for(i = 0; i < nameLengths.length; i++){
     nameSum += nameLengths[i];
 } console.log(nameSum);
+
+
+function wordn(word, n){
+    let theString = "";
+    for(i = 0; i < n; i++){
+        
+        theString += word;
+
+    }
+
+    return theString;
+} console.log(wordn('Yokudekita', 3));
+
+
+
+function namae(firstNamae, lastNamae){
+
+    console.log(firstNamae + ' ' + lastNamae);
+
+}
+    namae('Maikeru', 'Jorii');
+
+
+
+function numberArray(theArray){
+    let sum = 0;
+    for(i = 0; i < theArray.length; i++){
+    sum += theArray[i];
+    if(sum >= 100){
+        return true;
+        
+}
+else return false;
+    }
+}
+    console.log(numberArray(ages));
+
+
+
+
+let numAr = [7, 3, 10, 15, 2];
+
+function avArray(numAr){
+    let summ = 0
+    for(i = 0; i < numAr.length; i++){
+        summ += numAr[i]
+    }
+    let averageNumbs = summ / numAr.length;
+    return averageNumbs
+}console.log(avArray(numAr));
+
+
+
+let newArray1 = [1, 6, 7, 2, 10];
+let newArray2 = [9, 4, 6, 16, 3];
+
+function twoArrayAv(newArray1, newArray2){
+    let sumOne = 0;
+    let sumTwo = 0;
+
+    for(i = 0; i < newArray1.length; i++){
+        sumOne += newArray1[i];
+    }
+    for(i =0; i < newArray2.length ; i++){
+        sumTwo += newArray2[i];
+    }
+
+    let averagesOne = sumOne / newArray1.length;
+
+    let averagesTwo = sumTwo / newArray2.length;
+
+    if(averagesOne > averagesTwo){
+        return true;
+    }
+    else return false;
+}console.log(twoArrayAv(newArray1, newArray2));
+
+
+
+
+function willBuyDrink(isHotOutside, moneyInPocket){
+    if(isHotOutside === true && moneyInPocket > 10.50){
+        return true;
+    }
+    else return false;
+}console.log(willBuyDrink(true, 11));
