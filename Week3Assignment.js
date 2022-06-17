@@ -72,3 +72,10 @@ let nameLengths = [];
 for(i = 0; i < nameArray.length; i++){
     nameLengths[i] = nameArray[i].length;
 } console.log(nameLengths);
+
+
+nameSum = 0;
+
+for(i = 0; i < nameLengths.length; i++){
+    nameSum += nameLengths[i];
+} console.log(nameSum);
