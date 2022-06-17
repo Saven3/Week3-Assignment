@@ -37,3 +37,11 @@ console.log(averageAge);
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 console.log(names);
 
+let averageLetters = 0;
+
+for(average of names){
+    averageLetters += average.length;
+}
+    average = averageLetters / names.length;
+
+    console.log(average);
