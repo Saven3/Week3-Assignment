@@ -167,3 +167,20 @@ function willBuyDrink(isHotOutside, moneyInPocket){
     }
     else return false;
 }console.log(willBuyDrink(true, 11));
+
+
+
+
+//I play a lot of trading card games so the first thing that came to mind was sorting cards but I didnt want to do the typical A-Z. I thought it would be neat to sort by Longest name. So this is my example.
+
+function whichCardNameLonger(card1, card2){
+    if(card1.length > card2.length){
+        console.log('Card1 is longer');
+    }
+    else if(card2.length > card1.length){
+        console.log('Card2 is longer');
+    }
+    else{
+        console.log('They are the same length.');
+    }
+} console.log(whichCardNameLonger('Kizan', 'Kageki'));
