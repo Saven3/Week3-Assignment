@@ -44,4 +44,31 @@ for(average of names){
 }
     average = averageLetters / names.length;
 
-    console.log(average);
+    console.log(average); 
+
+
+
+
+let name1 = "";
+
+for(i = 0; i < names.length; i++){
+    
+    if(i == names.length){
+        name1 += names[i];
+    } 
+    else name1 += names[i] + " "
+} console.log(name1);
+
+console.log(names[names.length - 1]);
+
+console.log(names[0]);
+
+
+
+let nameArray = ['Kelly', 'Sam', 'Kate'];
+let nameLengths = [];
+
+
+for(i = 0; i < nameArray.length; i++){
+    nameLengths[i] = nameArray[i].length;
+} console.log(nameLengths);
